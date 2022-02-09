@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <script src="https://kit.fontawesome.com/06ef95a7ee.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="./style/w3.css">
+    <link rel="stylesheet" href="./style/main.css">
+
+</head>
+
+<body>
+    <header id="top">
+        <p class="title"> Portfolio</p>
+        <p class="description">Guillermo Ortiz Vallecillos</p>
+    </header>
+    <nav>
+        <div>
+            <a href="#Sobre_mi">Sobre mi</a>
+        </div>
+        <div>
+            <a href="#Proyectos">Proyectos</a>
+        </div>
+    </nav>
+    <main>
+        <h1 id="Sobre_mi">Sobre mi</h1>
+        <div class="grid_about">
+            <div class="container">
+                <img src="./img/pfp2.png" alt="" class="pfp">
+                <P>Este soy yo</P>
+            </div>
+            <p>Hola, soy Guillermo O.V.
+                <br>
+                Tengo <i class="data var_age"></i>
+                años
+            </p>
+        </div>
+        <h1 id="Proyectos">Proyectos</h1>
+        <div class="Proyectos_contenedor">
+            <div class="card" id="card1">
+                <!--Card-->
+                <img src="./img/Acrobat_opmDbJAHel.png" alt="">
+                <div class="desc">
+                    <h1>Safari tipografico</h1>
+                </div>
+            </div>
+            <!--Card END-->
+            <div class="card" id="card1">
+                <!--Card-->
+                <img src="./img/Acrobat_opmDbJAHel.png" alt="">
+                <div class="desc">
+                    <h1>Safari tipografico</h1>
+                </div>
+            </div>
+            <!--Card END-->
+            <div class="card" id="card1">
+                <!--Card-->
+                <img src="./img/Acrobat_opmDbJAHel.png" alt="">
+                <div class="desc">
+                    <h1>Safari tipografico</h1>
+                </div>
+            </div>
+            <!--Card END-->
+            <div class="card" id="card1">
+                <!--Card-->
+                <img src="./img/Acrobat_opmDbJAHel.png" alt="">
+                <div class="desc">
+                    <h1>Safari tipografico</h1>
+                </div>
+            </div>
+            <!--Card END-->
+
+        </div>
+        <!--END-->
+    </main>
+    <footer>Made with love and W3.css</footer>
+    <script>
+        function updateAge() {
+            const birth = 2001;
+            const d = new Date();
+            const age = d.getFullYear() - birth - 1;
+            var holder_age = document.getElementsByClassName("var_age");
+            for (let i = 0; i < holder_age.length; i++) {
+                holder_age[i].innerHTML = age;
+            }
+        }
+        updateAge();
+    </script>
+</body>
+
+</html>
