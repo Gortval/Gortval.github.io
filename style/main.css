@@ -108,16 +108,19 @@ img{
 @media only screen and (min-width: 740px) {
     .grid_about{
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto auto auto;
         grid-gap: 0px 20px;
         align-self: center;
         align-items: center;
         max-width: fit-content;
     }
+    main{
+        max-width: 90%;
+    }
 }
 
 .grid_about{
-    margin: auto;
+    /* margin: auto; */
 }
 
 .grid_about p{
@@ -264,6 +267,7 @@ i{
     width: 100%;
     height: auto;
     aspect-ratio: 1/1;
+    flex-shrink: 0;
     box-shadow: 0px 0px 3px black;
     position: relative;
 }
