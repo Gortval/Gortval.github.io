@@ -180,6 +180,7 @@ nav{
     color: white;
     box-shadow: 0 0 5px 0px black;
     position: sticky;
+    z-index: 1;
     top: 0;
 }
 
