@@ -3,13 +3,13 @@
 
 <head>
     <script src="https://kit.fontawesome.com/06ef95a7ee.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
     <link rel="stylesheet" href="./style/w3.css">
     <link rel="stylesheet" href="./style/main.css">
-
 </head>
 
 <body>
@@ -39,13 +39,17 @@
         </div>
         <h1 id="Proyectos">Proyectos</h1>
         <div class="Proyectos_contenedor">
-            <div class="card">
+            <div class="card" onclick="openCard('#card_info_1')">
                 <!--Card-->
                 <img src="./img/Acrobat_opmDbJAHel.png" alt="">
-                <div class="desc">
+                <div class="desc" onclick="">
                     <h1>Safari tipografico</h1>
                 </div>
             </div>
+            <div class="card_info" id="card_info_1">
+                <img src="./img/Acrobat_opmDbJAHel.png" alt="">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut ex expedita sit nisi recusandae minima aliquam voluptatum dolores quod dolorum, ipsam ad nobis saepe sequi nostrum odio quo at consequuntur!</p>
+                </div>
             <!--Card END-->
             <div class="card">
                 <!--Card-->
@@ -88,6 +92,8 @@
         }
         updateAge();
     </script>
+    <script src="./JS/cards.js"></script>
+
 </body>
 
 </html>
