@@ -297,4 +297,6 @@ i{
 
 .card:hover .desc{
     opacity: 1;
+    transition-duration: 100ms;
+    cursor: pointer;
 }
