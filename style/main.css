@@ -324,5 +324,5 @@ i{
 }
 
 .card_info > p{
-    inline-size: 50%;
+    /* inline-size: 50%; */
 }
