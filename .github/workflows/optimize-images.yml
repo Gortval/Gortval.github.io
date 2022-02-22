@@ -1,10 +1,11 @@
 name: Optimize images
 on:
-  push:
+  pull_request:
     branches:    
       - 'main'
 jobs:
   build:
+  if: github.event.pull_request.head.repo.full_name == github.repository
     name: calibreapp/image-actions
     runs-on: ubuntu-latest
     steps:
@@ -14,4 +15,4 @@ jobs:
       - name: Compress Images
         uses: calibreapp/image-actions@main
         with:
-          githubToken: ${{ secrets.GITHUB_TOKEN }}
+          githubToken: ${{ secrets.REPO_SCOPED_TOKEN }}
