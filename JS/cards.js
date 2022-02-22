@@ -7,5 +7,5 @@ init();
 // Utilities
 
 function openCard(x){
-    $(x).toggle(500);
+    $(x).toggle(200);
 };
