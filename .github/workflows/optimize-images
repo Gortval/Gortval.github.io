@@ -8,6 +8,14 @@ on:
       - 'img/*.jpeg'
       - 'img/*.png'
       - 'img/*.webp'
+  workflow_dispatch:
+    branches:
+      - main
+    paths:
+      - 'img/*.jpg'
+      - 'img/*.jpeg'
+      - 'img/*.png'
+      - 'img/*.webp'
 jobs:
   build:
     name: calibreapp/image-actions
