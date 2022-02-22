@@ -1,12 +1,8 @@
 name: Optimize images
-on: push
-  branches:
-    - 'main'
-  paths:
-    - '**.jpg'
-    - '**.jpeg'
-    - '**.png'
-    - '**.webp'
+on:
+  push:
+    branches:    
+      - 'main'
 jobs:
   build:
     name: calibreapp/image-actions
