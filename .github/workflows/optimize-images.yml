@@ -1,7 +1,7 @@
 name: Optimize images
 on: push
   branches:
-    - main
+    - 'main'
   paths:
     - '**.jpg'
     - '**.jpeg'
