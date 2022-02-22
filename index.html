@@ -3,17 +3,22 @@
 
 <head>
     <script src="https://kit.fontawesome.com/06ef95a7ee.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Guillermo Ortiz Vallecillos">
+    <meta name="description" content="Guillermo Ortiz Vallecillos' portfolio">
     <title>Portafolio</title>
     <link rel="stylesheet" href="./style/w3.css">
     <link rel="stylesheet" href="./style/main.css">
 </head>
 
 <body>
-    <header id="top">
+    <header id="top" style="background-image: url(./img/por);">
+        <div class="header_back"></div>
         <p class="title"> Portfolio</p>
         <p class="description">Guillermo Ortiz Vallecillos</p>
     </header>
@@ -32,54 +37,95 @@
                 <img src="./img/pfp2_supersmall.png" alt="" class="pfp">
                 <p>Este soy yo</p>
             </div>
-            <p class="grid_about_side">Hola, soy Guillermo O.V.
-                <br>Tengo <i class="data var_age"></i> años
+            <p class="grid_about_side">
+                Hola, soy Guillermo O.V.
+                <br>Tengo <i class="data var_age"></i> años, y soy estudiante de ciclo superior de Diseño y Edición de publicaciones impresas y multimedia
             </p>
-            <div>Texto</div>
+            <div style="align-self: start;">
+                <h2>Hobbies</h2>
+                <ul>
+                    <li>Videojuegos</li>
+                    <li>Netflix</li>
+                    <li>Scripting</li>
+                </ul>
+            </div>
         </div>
         <h1 id="Proyectos">Proyectos</h1>
         <div class="Proyectos_contenedor">
+            <!--Card-->
             <div class="card" onclick="openCard('#card_info_1')">
-                <!--Card-->
-                <img src="./img/Acrobat_opmDbJAHel.png" alt="">
+                <img src="./img/firefox_qbrSzhaiOv.png" alt="">
                 <div class="desc" onclick="">
-                    <h1>Safari tipografico</h1>
+                    <h1>Flyer publicitario</h1>
                 </div>
             </div>
             <div class="card_info" id="card_info_1">
-                <img src="./img/Acrobat_opmDbJAHel.png" alt="">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut ex expedita sit nisi recusandae minima aliquam voluptatum dolores quod dolorum, ipsam ad nobis saepe sequi nostrum odio quo at consequuntur!</p>
-                </div>
-            <!--Card END-->
-            <div class="card">
-                <!--Card-->
-                <img src="./img/Acrobat_opmDbJAHel.png" alt="">
-                <div class="desc">
-                    <h1>Safari tipografico</h1>
-                </div>
-            </div>
-            <!--Card END-->
-            <div class="card">
-                <!--Card-->
-                <img src="./img/Acrobat_opmDbJAHel.png" alt="">
-                <div class="desc">
-                    <h1>Safari tipografico</h1>
-                </div>
-            </div>
-            <!--Card END-->
-            <div class="card">
-                <!--Card-->
-                <img src="./img/Acrobat_opmDbJAHel.png" alt="">
-                <div class="desc">
-                    <h1>Safari tipografico</h1>
-                </div>
-            </div>
-            <!--Card END-->
 
+                <img src="./img/fonica_logo.png" alt="">
+                <img src="./img/firefox_qbrSzhaiOv.png" alt="">
+                <img src="./img/./Illustrator_D0Jo22DLQO.png" alt="">
+                <p>
+                    En este proyecto, se me fue asignado un logotipo (en este caso es para la academia Fónica), y a partir de este, tuve que elaborar un flyer.
+                </p>
+            </div>
+            <!--Card END-->
+            <!--Card-->
+            <div class="card" onclick="openCard('#card_info_2')">
+                <img src="./img/libro_cubierta.png" alt="">
+                <div class="desc" onclick="">
+                    <h1>Maquetación simple libro</h1>
+                </div>
+            </div>
+            <div class="card_info" id="card_info_2">
+
+                <img src="./img/libro_cuerpo.png" alt="">
+                <img src="./img/libro_cuerpo_fix.png" alt="">
+                <img src="./img/libro_cubierta.png" alt="">
+                <p>
+                    En este proyecto, se me fue dado un archivo de texto de un libro. Tuve que limpiar el texto, eliminar espacios innecesarios, al igual que elementos dejados de su previo escaneo (números de páginas), distribuir el texto, diseñar la portada, imposición, etc.
+                </p>
+            </div>
+            <!--Card END-->
+            <!--Card-->
+            <div class="card" onclick="openCard('#card_info_3')">
+                <img src="./img/font_web.png" alt="">
+                <div class="desc" onclick="">
+                    <h1>Proyecto simple web</h1>
+                </div>
+            </div>
+            <div class="card_info" id="card_info_3">
+                <img src="./img/font_web_goals.png" alt="">
+                <img src="./img/font_web_wide.png" alt="">
+                <img src="./img/font_web.png" alt="">
+                <p>
+                    En este proyecto, se me fue dado una un modelo a seguir para elaborar una página web, usando como tema una tipografía asignada.
+                </p>
+                <p>
+                    Además de ello, añadí una barra de navegación, adaptable al tamaño de pantalla.<br>Sí quieres echarle un vistazo al código, click <a href="./src/font_web/index.html" target="_blank">aquí</a>.
+                </p>
+            </div>
+            <!--Card END-->
+            <!--Card-->
+            <div class="card" onclick="openCard('#card_info_4')">
+                <img src="./img/portfolio_cover.png" alt="">
+                <div class="desc" onclick="">
+                    <h1>Portafolio</h1>
+                </div>
+            </div>
+            <div class="card_info" id="card_info_4">
+                <img src="./img/portfolio_coding.png" alt="">
+                <p>
+                    Este portafolio se hizo con adaptabilidad a multiples tamaños de pantalla (ordenador, smartphone).<br><a href="https://github.com/gortval/gortval.github.io" target="_blank">Aquí</a> esta el codigo fuente.
+                </p>
+            </div>
+            <!--Card END-->
         </div>
         <!--END-->
     </main>
-    <footer>Made with love and W3.css</footer>
+    <footer style="color: white;">
+        <span class="material-icons" style="margin-right: 5px;">email</span>
+        <p>gortizvallecillos@gmail.com</p>
+    </footer>
     <script>
         function updateAge() {
             const birth = 2001;

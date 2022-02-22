@@ -31,9 +31,23 @@ h1{
     font-weight: 600;
 }
 
+.header_back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/portfolio_coding.png);
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: brightness(50%);
+    z-index: -1;
+}
+
 header {
     height: 100vh;
-    background-color: black;
+    background-image: url(/img/portfolio_coding.png);
+    background-attachment: fixed;
     color: white;
     display: flex;
     align-items: center;
@@ -131,7 +145,7 @@ img{
 }
 
 .grid_about p{
-    line-break: anywhere;
+    /* line-break: anywhere; */
 }
 
 
@@ -150,7 +164,7 @@ main{
     background-color: rgb(36, 36, 36);
     color: white;
     margin: auto;
-    /* max-width: 90%; */
+    max-width: max-content;
 }
 
 main > :first-child{
@@ -208,6 +222,7 @@ nav > div > a{ /*Navbar text*/
 }
 
 footer{
+    max-height: max-content;
     background-color: black;
     position: static;
     left: 0;
@@ -231,6 +246,7 @@ button.w3-button{
 
 a{
     text-decoration: none;
+    cursor: pointer;
 }
 
 div.card{
@@ -269,7 +285,7 @@ i{
     justify-items: center;
 }
 
-.Proyectos_contenedor > .card{
+.card{
     max-width: 250px;
     min-width: 250px;
     width: 100%;
@@ -313,7 +329,7 @@ i{
     position: relative;
 }
 
-.card_info *{
+.card_info > *{
     margin: 10px;
     justify-content: flex-start;
 
@@ -324,5 +340,25 @@ i{
 }
 
 .card_info > p{
-    inline-size: 50%;
+    /* inline-size: 50%; */
+}
+
+.card_info a {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 2px;
+    transition-duration: 100ms;
+    font-weight: 700;
+}
+.card_info a:hover{
+    background-color: black;
+    color: white;
+}
+
+.card_wide{
+    background-color:  black;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 15px;
+    align-content: center;
 }
