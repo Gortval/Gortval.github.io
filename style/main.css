@@ -208,6 +208,7 @@ nav > div > a{ /*Navbar text*/
 }
 
 footer{
+    max-height: max-content;
     background-color: black;
     position: static;
     left: 0;
@@ -231,6 +232,7 @@ button.w3-button{
 
 a{
     text-decoration: none;
+    cursor: pointer;
 }
 
 div.card{
@@ -269,7 +271,7 @@ i{
     justify-items: center;
 }
 
-.Proyectos_contenedor > .card{
+.card{
     max-width: 250px;
     min-width: 250px;
     width: 100%;
@@ -313,7 +315,7 @@ i{
     position: relative;
 }
 
-.card_info *{
+.card_info > *{
     margin: 10px;
     justify-content: flex-start;
 
@@ -325,4 +327,24 @@ i{
 
 .card_info > p{
     /* inline-size: 50%; */
+}
+
+.card_info a {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 2px;
+    transition-duration: 100ms;
+    font-weight: 700;
+}
+.card_info a:hover{
+    background-color: black;
+    color: white;
+}
+
+.card_wide{
+    background-color:  black;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 15px;
+    align-content: center;
 }

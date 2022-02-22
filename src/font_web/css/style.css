@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Estonia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+:root{
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+}
+
+body{
+  /* padding-left: 30px;
+  padding-right: 30px; */
+}
+#title{
+  /* margin: 60px; */
+  color: white;
+  font-size: 80px;
+  border-left: 6px solid white;
+  margin-top: 10px;
+  padding-left: 6px;
+  outline-style: solid;
+  outline-color: black;
+  outline-width: 30px;
+  margin: 20px;
+  font-family:'Montserrat', sans-serif;
+}
+div.titleContainer{
+  background-color: black;
+  /* padding: -30px; */
+  /* margin: -30px; */
+}
+.fontdisplay{
+  font-family: 'Estonia', cursive;
+  font-size: 59px;
+  background-color: #80808014;
+  max-width: fit-content;
+  padding: 10px;
+  margin-top: auto;
+}
+.fontdisplay2{
+  font-family: 'Lato', sans-serif;
+  font-size: 40px;
+  background-color: #80808014;
+  max-width: fit-content;
+  padding: 10px;
+  margin-top: auto;
+}
+.content > *{
+  margin-left: 20%;
+  margin-right: 20%;
+}
+h1, h2, h3{
+  border-left: 6px solid;
+  padding-left: 6px;
+  /* margin-top: 60px; */
+  margin-bottom: 40px;
+  font-size: 50px;
+  color: rgb(153, 0, 0);
+}
+
+h2{
+  font-size: 40px;
+}
+h3{
+  font-size: 20px;
+}
+li{
+  margin-bottom: 20px
+}
+
+.navbar{
+  display: flex;
+  background-color: whitesmoke;
+  margin-top: -0.5%!important;
+  margin-left: -0.8%!important;
+  position: fixed;
+  height: 100%;
+  flex-direction: column;
+}
+
+@media (max-width: 1200px) {
+  .navbar{
+    height: auto;
+    position: initial;
+    flex-direction: row;
+  }
+  /* .navbar > div{
+    display: inline;
+  } */
+}
+.navbar > div {
+  margin: 10px;
+  padding: 20px;
+  height: fit-content;
+}
+.navbar > div:hover{
+  box-shadow: 0px 0px 5px 0px;
+  cursor: pointer;
+}
+
+.navbar > div > a{
+  color: black;
+}
+
+a{
+  text-decoration: auto;
+}
+.sub{
+  margin-bottom: 3px;
+}
+
+div.glyphs{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.glyphs > div{
+  border: 1px solid black;
+  padding: 4px;
+  width: 55px;
+  height: 55px;
+  text-align: center;
+
+}
+
+iframe{
+      width: -webkit-fill-available;
+}
+.endBlock{
+  margin-top: 156px;
+}
